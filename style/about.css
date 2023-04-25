@@ -1,0 +1,215 @@
+/* General styles */
+:root {
+	/* colors */
+	--main-blue-color: #1f2937; /*hero and footer background*/
+	--secondary-color: #e5e7eb; /* quote section background color, hero secondary text, header link text */
+	--button-color: #3882f6;
+
+	/* fonts */
+	--main-text-color: #f9faf8; /* hero main text, header logo text*/
+}
+@font-face {
+	font-family: 'Roboto-regular';
+	src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: 'Roboto-bold';
+	src: url(../fonts/Roboto-Bold.ttf) format('truetype');
+}
+
+
+body {
+	margin: 0;
+	font-family: 'Roboto-regular', sans-serif;
+}
+
+h1 {
+	font-family: 'Roboto-regular', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* NAV */
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--main-blue-color);
+	width: 80%;
+	position: sticky;
+	top: 0px;
+	padding: 5px 10%;
+}
+
+.left-nav {
+	padding-top: 20px;
+	flex: 1;
+}
+.left-nav img {
+	width: 20vb;
+	border-radius: 113px 8px 91px 8px;
+	-moz-border-radius: 113px 8px 91px 8px;
+	-webkit-border-radius: 113px 8px 91px 8px;
+}
+.right-nav {
+	flex: 1;
+}
+ul {
+	display: flex;
+	justify-content: end;
+}
+
+li {
+	list-style: none;
+}
+
+nav a {
+	text-decoration: none;
+	color: var(--secondary-color);
+	font-size: 18px;
+	margin: 30px;
+}
+
+/* HEADER */
+/*
+header {
+	background-color: var(--main-blue-color);
+	display: flex;
+	justify-content: center;
+	padding: 100px 100px;
+}
+*/
+/*
+header p {
+	color: var(--main-text-color);
+	 font-size: 36px; 
+	 font-weight: 900; 
+*/
+
+/*
+header div h1 {
+	font-size: 48px;
+	font-weight: 900;
+	color: var(--main-text-color);
+}
+
+header button {
+	background-color: var(--button-color);
+	border-radius: 7px;
+	padding: 9px 20px;
+	margin-top: 5px;
+	color: var(--main-text-color);
+	font-weight: bold;
+}
+*/
+
+/* Added Imani's header section to cover the background image */
+header
+{
+	height: 400px;
+	width: 100%;
+	background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210902/pngtree-the-background-photography-of-the-empty-library-bookstore-indoors-image_785539.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/*-------------------end of my header section-----------------------------*/
+
+/*------------------- About Section-----------------------------------------*/
+
+.about-main-section {
+	padding: 3% 0;
+	background-color: var(--secondary-color);
+	border-radius: 10px;
+	width: 60%;
+	margin: 5% auto;
+}
+
+
+section {
+	margin: 5%;
+	text-align: justify;
+}
+
+section.image {
+	display: flex;
+	align-items: center;
+}
+
+section img {
+	margin: 0 auto;
+	width: 90%;
+}
+
+h1 {
+	text-align: center;
+	margin: 1%;
+}
+
+.section3 {
+	text-align: center;
+	background-color: var(--main-blue-color);
+	padding: 2%;
+}
+.section3 a {
+	color: var(--main-text-color);
+	text-decoration: none;
+	
+}
+
+.about-main-section3
+{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.background-image-class
+{
+	height: 400px;
+	width: 100%;
+	background-image: url("https://wallpaperaccess.com/full/253332.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/*----------------------------end of about section------------------------------------*/
+
+/*----------------------------footer---------------------------------------------------*/
+footer 
+{
+	background: #1f2937;
+	padding: 1% 30%;
+	text-align: center;
+}
+
+footer p
+{
+	font-size: 18px;
+	color: #f9faf8;
+}
+
+@media (max-width: 770px) {
+	.left-nav img {
+		width: 15vb;
+	}
+	.right-nav {
+		margin-top: 10px;
+		margin-left: 60px;
+	}
+	nav ul {
+		flex-direction: column;
+	}
+	nav li {
+		margin: 5px;
+	}
+	.about-main-section2 article p,
+	.about-main-section1 article p
+	{
+		text-align: center;
+	} 
+}
